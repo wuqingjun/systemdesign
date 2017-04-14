@@ -2,10 +2,18 @@
 //
 
 #include "stdafx.h"
+#include "Problems\MiniTweeter\minitweetertest.h"
+
+void Test0()
+{
+	MiniTweeterTest test;
+	test.Test0();
+}
 
 
 int main()
 {
+
     return 0;
 }
 

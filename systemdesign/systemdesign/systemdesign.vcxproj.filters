@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="problems">
+      <UniqueIdentifier>{37684a64-6cd2-4bca-b984-d78a7fa59422}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="problems\MiniTweeter">
+      <UniqueIdentifier>{43a129a5-c674-4c0c-848d-e0e2b85aafff}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -20,6 +26,12 @@
     </ClInclude>
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Problems\MiniTweeter\minitweeter.h">
+      <Filter>problems\MiniTweeter</Filter>
+    </ClInclude>
+    <ClInclude Include="Problems\MiniTweeter\minitweetertest.h">
+      <Filter>problems\MiniTweeter</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
