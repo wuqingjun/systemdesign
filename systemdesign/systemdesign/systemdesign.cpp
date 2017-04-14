@@ -7,13 +7,14 @@
 void Test0()
 {
 	MiniTweeterTest test;
-	test.Test0();
+	test.Test2();
 }
 
 
 int main()
 {
-
+	Test0();
+	
     return 0;
 }
 
