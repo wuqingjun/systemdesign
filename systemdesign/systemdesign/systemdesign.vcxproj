@@ -135,6 +135,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Problems\ConsistentHashing\consistenthashing.h" />
     <ClInclude Include="Problems\MiniTweeter\minitweeter.h" />
     <ClInclude Include="Problems\MiniTweeter\minitweetertest.h" />
     <ClInclude Include="stdafx.h" />

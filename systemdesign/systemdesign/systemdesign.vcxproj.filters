@@ -19,6 +19,9 @@
     <Filter Include="problems\MiniTweeter">
       <UniqueIdentifier>{43a129a5-c674-4c0c-848d-e0e2b85aafff}</UniqueIdentifier>
     </Filter>
+    <Filter Include="problems\ConsistentHashing">
+      <UniqueIdentifier>{7b0edd68-8417-4c38-8105-664f6d8ad9bd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -32,6 +35,9 @@
     </ClInclude>
     <ClInclude Include="Problems\MiniTweeter\minitweetertest.h">
       <Filter>problems\MiniTweeter</Filter>
+    </ClInclude>
+    <ClInclude Include="Problems\ConsistentHashing\consistenthashing.h">
+      <Filter>problems\ConsistentHashing</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
