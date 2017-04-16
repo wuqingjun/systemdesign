@@ -25,6 +25,9 @@
     <Filter Include="problems\memcache">
       <UniqueIdentifier>{b6ab42a2-21b2-495b-a597-c3faab8663bc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="problems\MiniCassandra">
+      <UniqueIdentifier>{ea792fd3-2e28-4021-9018-02036dd15066}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -47,6 +50,9 @@
     </ClInclude>
     <ClInclude Include="Problems\MemCache\memcache_test.h">
       <Filter>problems\memcache</Filter>
+    </ClInclude>
+    <ClInclude Include="Problems\MiniCassandra\minicassandra.h">
+      <Filter>problems\MiniCassandra</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -138,6 +138,7 @@
     <ClInclude Include="Problems\ConsistentHashing\consistenthashing.h" />
     <ClInclude Include="Problems\MemCache\memcache.h" />
     <ClInclude Include="Problems\MemCache\memcache_test.h" />
+    <ClInclude Include="Problems\MiniCassandra\minicassandra.h" />
     <ClInclude Include="Problems\MiniTweeter\minitweeter.h" />
     <ClInclude Include="Problems\MiniTweeter\minitweetertest.h" />
     <ClInclude Include="stdafx.h" />
