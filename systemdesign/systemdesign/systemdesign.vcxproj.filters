@@ -22,6 +22,9 @@
     <Filter Include="problems\ConsistentHashing">
       <UniqueIdentifier>{7b0edd68-8417-4c38-8105-664f6d8ad9bd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="problems\memcache">
+      <UniqueIdentifier>{b6ab42a2-21b2-495b-a597-c3faab8663bc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -38,6 +41,12 @@
     </ClInclude>
     <ClInclude Include="Problems\ConsistentHashing\consistenthashing.h">
       <Filter>problems\ConsistentHashing</Filter>
+    </ClInclude>
+    <ClInclude Include="Problems\MemCache\memcache.h">
+      <Filter>problems\memcache</Filter>
+    </ClInclude>
+    <ClInclude Include="Problems\MemCache\memcache_test.h">
+      <Filter>problems\memcache</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
