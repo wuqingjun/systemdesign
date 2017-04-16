@@ -28,6 +28,9 @@
     <Filter Include="problems\MiniCassandra">
       <UniqueIdentifier>{ea792fd3-2e28-4021-9018-02036dd15066}</UniqueIdentifier>
     </Filter>
+    <Filter Include="problems\TrieService">
+      <UniqueIdentifier>{6b8afdd6-d9a6-4a61-a7e3-52995cb02f89}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -56,6 +59,9 @@
     </ClInclude>
     <ClInclude Include="Problems\InvertedIndex\invertedindex.h">
       <Filter>problems</Filter>
+    </ClInclude>
+    <ClInclude Include="Problems\TrieService\trieservice.h">
+      <Filter>problems\TrieService</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
