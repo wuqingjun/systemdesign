@@ -54,6 +54,9 @@
     <ClInclude Include="Problems\MiniCassandra\minicassandra.h">
       <Filter>problems\MiniCassandra</Filter>
     </ClInclude>
+    <ClInclude Include="Problems\InvertedIndex\invertedindex.h">
+      <Filter>problems</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
