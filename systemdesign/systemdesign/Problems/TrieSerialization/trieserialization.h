@@ -4,6 +4,7 @@
 #include <map>
 #include <istream>
 #include <vector>
+#include <stack>
 #include <iterator>
 using namespace std;
 
@@ -25,7 +26,6 @@ public:
 		if (root)
 		{
 			res += "{";
-			size_t size = root->children.size(), i = 0;
 			for (auto &e : root->children)
 			{
 				res.append(1, e.first);
@@ -45,19 +45,16 @@ public:
 	*/
 	TrieNode* deserialize(string data) {
 		// Write your code here
-		TrieNode *res = nullptr;
-
-		if (!data.empty())
+		TrieNode *res = new TrieNode(), *current = res;
+		stack<TrieNode *> st;
+		for (auto c : data)
 		{
-			res = new TrieNode();
-			string content = data.substr(1, data.length() - 2);
-			istringstream iss(content);
-			vector<string> tokens;
-			string token;
-			std::getline(iss, token, ',')
-
-			vector<string> tokens{ istream_iterator<string>{iss}, istream_iterator<string>() };
-
+			if (c == '{') st.push(current);
+			else if (c == '}') st.pop();
+			else {
+				current = new TrieNode();
+				st.top()->children[c] = current;
+			}
 		}
 
 		return res;
