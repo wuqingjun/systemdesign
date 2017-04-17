@@ -31,6 +31,9 @@
     <Filter Include="problems\TrieService">
       <UniqueIdentifier>{6b8afdd6-d9a6-4a61-a7e3-52995cb02f89}</UniqueIdentifier>
     </Filter>
+    <Filter Include="problems\TrieSerialization">
+      <UniqueIdentifier>{f2982f34-dc0b-4250-b71c-583669272dae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -62,6 +65,9 @@
     </ClInclude>
     <ClInclude Include="Problems\TrieService\trieservice.h">
       <Filter>problems\TrieService</Filter>
+    </ClInclude>
+    <ClInclude Include="Problems\TrieSerialization\trieserialization.h">
+      <Filter>problems\TrieSerialization</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
