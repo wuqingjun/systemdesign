@@ -34,6 +34,9 @@
     <Filter Include="problems\TrieSerialization">
       <UniqueIdentifier>{f2982f34-dc0b-4250-b71c-583669272dae}</UniqueIdentifier>
     </Filter>
+    <Filter Include="problems\TypeAhead">
+      <UniqueIdentifier>{c67d03f2-f143-46c2-8f0d-b44e428c1e1f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -68,6 +71,9 @@
     </ClInclude>
     <ClInclude Include="Problems\TrieSerialization\trieserialization.h">
       <Filter>problems\TrieSerialization</Filter>
+    </ClInclude>
+    <ClInclude Include="Problems\TypeAhead\typeahead.h">
+      <Filter>problems\TypeAhead</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
