@@ -7,6 +7,12 @@
 #include <queue>
 using namespace std;
 
+
+vector<string> helper(string url)
+{
+	return {};
+}
+
 class Crawler
 {
 private:
@@ -16,8 +22,11 @@ private:
 	mutex m_mtxUrlQueue;
 	condition_variable m_cvUrlQueue;
 	queue<string> m_vctUrlQueue;
+
+	int m_queueSize;
+	int m_threadNumber;
 public:
-	Crawler() = default;
+	Crawler(int qn, int tn) : m_queueSize(qn), m_threadNumber(tn) {}
 
 	static void doWork(Crawler * c)
 	{
@@ -39,14 +48,24 @@ public:
 		
 		if (needProccess)
 		{
-
+			auto res = helper(url);
+			for (auto &e : res)
+			{
+				unique_lock<mutex> lockQueue(c->m_mtxUrlQueue);
+				c->m_cvUrlQueue.wait(lockQueue, c->m_vctUrlQueue.size() < c->m_queueSize);
+				c->m_vctUrlQueue.push(e);
+				c->m_cvUrlQueue.notify_one();
+			}
 		}
-
 
 	}
 
 	vector<string> crawl(string url)
 	{
-		
+		for (int i = 0; i < m_threadNumber; ++i)
+		{
+			auto t = thread(doWork, this);
+			t.join();
+		}
 	}
 };
