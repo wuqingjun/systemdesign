@@ -21,6 +21,17 @@ private:
 			res += codes[id % 62];
 			id /= 62;
 		}
+		reverse(res.begin(), res.end());
+		return res;
+	}
+
+	long long shortKeyToId(string &shorKey)
+	{
+		long long res = 0;
+		for (auto &e : shorKey)
+		{
+			res = res * 62 + e - (e >= '0' ? '0' : (e >= 'A' ? 'A' : 'a'));
+		}
 		return res;
 	}
 
@@ -61,6 +72,23 @@ public:
 		if (m_mpUrlToId.find(long_url) != end(m_mpUrlToId))
 			return tinyUrlBase + idToShortKey(m_mpUrlToId[long_url]);
 
+		long long id = 0;
+		for (auto &a : long_url)
+		{
+			id = (id * 256 + a) % 56800235584L;
+		}
+
+		string tmpShort = idToShortKey(id);
+
+		if (tmpShort.length() < 6) tmpShort = string(6 - tmpShort.size(), 'a') + tmpShort;
+		id = shortKeyToId(tmpShort);
+
+		while (m_mpIdToUrl.find(id) != end(m_mpIdToUrl)) id = (id + 1) % 56800235584L;
+
+		m_mpIdToUrl[id] = long_url;
+		m_mpUrlToId[long_url] = id;
+
+		return tinyUrlBase + idToShortKey(id);
 	}
 
 	/**
@@ -69,5 +97,15 @@ public:
 	*/
 	string shortToLong(string& short_url) {
 		// Write your code here
+		if (m_mpCustomKeyUrl.find(short_url) != end(m_mpCustomKeyUrl))
+			return m_mpCustomKeyUrl[short_url];
+
+		if (short_url.length() > tinyUrlBase.size())
+		{
+			auto shortKey = short_url.substr(tinyUrlBase.size());
+			long long id = shortKeyToId(shortKey);
+			return m_mpIdToUrl[id];
+		}
+		return "";
 	}
 };

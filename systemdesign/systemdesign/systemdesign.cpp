@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "Problems\MiniTweeter\minitweetertest.h"
 #include "Problems\MemCache\memcache_test.h"
+#include "Problems\\TinyUrlII\tinyurlII_test.h"
 
 void Test0()
 {
