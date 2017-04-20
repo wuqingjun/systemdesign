@@ -143,6 +143,7 @@
     <ClInclude Include="Problems\MiniCassandra\minicassandra.h" />
     <ClInclude Include="Problems\MiniTweeter\minitweeter.h" />
     <ClInclude Include="Problems\MiniTweeter\minitweetertest.h" />
+    <ClInclude Include="Problems\TinyUrlII\tinyurlII.h" />
     <ClInclude Include="Problems\TrieSerialization\trieserialization.h" />
     <ClInclude Include="Problems\TrieService\trieservice.h" />
     <ClInclude Include="Problems\TypeAhead\typeahead.h" />
