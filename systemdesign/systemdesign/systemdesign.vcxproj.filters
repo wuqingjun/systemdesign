@@ -87,6 +87,9 @@
     <ClInclude Include="Problems\TinyUrlII\tinyurlII.h">
       <Filter>problems\tinyurlII</Filter>
     </ClInclude>
+    <ClInclude Include="Problems\WebCrawler\webcrawler_test.h">
+      <Filter>problems\WebCrawler</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
