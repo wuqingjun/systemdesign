@@ -18,10 +18,18 @@ void Test1()
 	test.Test0();
 }
 
+void Test2()
+{
+	TinyUrlIITTest test;
+	test.Test0();
+	test.Test1();
+}
+
 int main()
 {
-	Test0();
-	Test1();
+	//Test0();
+	//Test1();
+	Test2();
 
     return 0;
 }

@@ -10,15 +10,15 @@ private:
 	unordered_map<string, string> m_mpCustomKeyUrl;
 	unordered_map<string, long long> m_mpUrlToId;
 	unordered_map<long long, string> m_mpIdToUrl;
-	const string codes = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890";
+	const string codes = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	const string tinyUrlBase = "http://tiny.url/";
-private:
+public:
 	string idToShortKey(long long id)
 	{
 		string res;
 		while (id != 0)
 		{
-			res += codes[id % 62];
+			res.append(1, codes[id % 62]);
 			id /= 62;
 		}
 		reverse(res.begin(), res.end());
@@ -28,9 +28,9 @@ private:
 	long long shortKeyToId(string &shorKey)
 	{
 		long long res = 0;
-		for (auto &e : shorKey)
+		for(auto &e: shorKey)
 		{
-			res = res * 62 + e - (e >= '0' ? '0' : (e >= 'A' ? 'A' : 'a'));
+			res = res * 62 + e + (e >= 'a' ? 36 - 'a' : (e >= 'A' ? 10 - 'A' : 0 - '0'));
 		}
 		return res;
 	}
