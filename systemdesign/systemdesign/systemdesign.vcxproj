@@ -136,6 +136,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Problems\ConsistentHashingII\consistenthashingII.h" />
+    <ClInclude Include="Problems\ConsistentHashingII\consistenthashingII_test.h" />
+    <ClInclude Include="Problems\ConsistentHashingII\geohash.h" />
+    <ClInclude Include="Problems\ConsistentHashingII\geohash_test.h" />
     <ClInclude Include="Problems\ConsistentHashing\consistenthashing.h" />
     <ClInclude Include="Problems\InvertedIndex\invertedindex.h" />
     <ClInclude Include="Problems\MemCache\memcache.h" />

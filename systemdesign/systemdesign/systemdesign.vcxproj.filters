@@ -43,6 +43,12 @@
     <Filter Include="problems\tinyurlII">
       <UniqueIdentifier>{26df7d0e-693f-4f86-92fa-0f66919e1040}</UniqueIdentifier>
     </Filter>
+    <Filter Include="problems\ConsistentHashingII">
+      <UniqueIdentifier>{85a53c8d-5e6c-4c17-96e6-bb33cb3d15ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="problems\GeoHash">
+      <UniqueIdentifier>{8dbd0bd4-bb58-45f2-ac24-873cec285a4c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -92,6 +98,18 @@
     </ClInclude>
     <ClInclude Include="Problems\TinyUrlII\tinyurlII_test.h">
       <Filter>problems\tinyurlII</Filter>
+    </ClInclude>
+    <ClInclude Include="Problems\ConsistentHashingII\consistenthashingII.h">
+      <Filter>problems\ConsistentHashingII</Filter>
+    </ClInclude>
+    <ClInclude Include="Problems\ConsistentHashingII\consistenthashingII_test.h">
+      <Filter>problems\ConsistentHashingII</Filter>
+    </ClInclude>
+    <ClInclude Include="Problems\ConsistentHashingII\geohash.h">
+      <Filter>problems\GeoHash</Filter>
+    </ClInclude>
+    <ClInclude Include="Problems\ConsistentHashingII\geohash_test.h">
+      <Filter>problems\GeoHash</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

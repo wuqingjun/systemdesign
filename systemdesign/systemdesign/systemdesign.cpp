@@ -5,6 +5,7 @@
 #include "Problems\MiniTweeter\minitweetertest.h"
 #include "Problems\MemCache\memcache_test.h"
 #include "Problems\\TinyUrlII\tinyurlII_test.h"
+#include "Problems\ConsistentHashingII\consistenthashingII_test.h"
 
 void Test0()
 {
@@ -25,11 +26,18 @@ void Test2()
 	test.Test1();
 }
 
+void Test3()
+{
+	ConsistentHashingIITest test;
+	test.Test0();
+}
+
 int main()
 {
 	//Test0();
 	//Test1();
-	Test2();
+	//Test2();
+	Test3();
 
     return 0;
 }
