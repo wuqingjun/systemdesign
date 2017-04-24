@@ -49,6 +49,12 @@
     <Filter Include="problems\GeoHash">
       <UniqueIdentifier>{8dbd0bd4-bb58-45f2-ac24-873cec285a4c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="problems\BloomFilter">
+      <UniqueIdentifier>{cd21dd8f-6ed5-403d-9152-2b07ac0a77d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="problems\WebLogger">
+      <UniqueIdentifier>{ab0e996c-6f6c-44e2-be5c-b8b91734e382}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -110,6 +116,18 @@
     </ClInclude>
     <ClInclude Include="Problems\ConsistentHashingII\geohash_test.h">
       <Filter>problems\GeoHash</Filter>
+    </ClInclude>
+    <ClInclude Include="Problems\BloomFilter\bloomfilter_test.h">
+      <Filter>problems\BloomFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="Problems\BloomFilter\bloomfilter.h">
+      <Filter>problems\BloomFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="Problems\WebLogger\weblogger.h">
+      <Filter>problems\WebLogger</Filter>
+    </ClInclude>
+    <ClInclude Include="Problems\WebLogger\weblogger_test.h">
+      <Filter>problems\WebLogger</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

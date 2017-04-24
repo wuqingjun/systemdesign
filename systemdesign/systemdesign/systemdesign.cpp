@@ -6,6 +6,8 @@
 #include "Problems\MemCache\memcache_test.h"
 #include "Problems\\TinyUrlII\tinyurlII_test.h"
 #include "Problems\ConsistentHashingII\consistenthashingII_test.h"
+#include "Problems\\BloomFilter\bloomfilter.h"
+#include "Problems\WebLogger\weblogger_test.h"
 
 void Test0()
 {
@@ -32,12 +34,19 @@ void Test3()
 	test.Test0();
 }
 
+void Test4()
+{
+	WebLoggerTest test;
+	test.Test1();
+}
+
 int main()
 {
 	//Test0();
 	//Test1();
 	//Test2();
-	Test3();
+	//Test3();
+	Test4();
 
     return 0;
 }

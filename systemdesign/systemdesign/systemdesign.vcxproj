@@ -136,6 +136,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Problems\BloomFilter\bloomfilter_test.h" />
+    <ClInclude Include="Problems\BloomFilter\bloomfilter.h" />
     <ClInclude Include="Problems\ConsistentHashingII\consistenthashingII.h" />
     <ClInclude Include="Problems\ConsistentHashingII\consistenthashingII_test.h" />
     <ClInclude Include="Problems\ConsistentHashingII\geohash.h" />
@@ -154,6 +156,8 @@
     <ClInclude Include="Problems\TypeAhead\typeahead.h" />
     <ClInclude Include="Problems\WebCrawler\webcrawler.h" />
     <ClInclude Include="Problems\WebCrawler\webcrawler_test.h" />
+    <ClInclude Include="Problems\WebLogger\weblogger.h" />
+    <ClInclude Include="Problems\WebLogger\weblogger_test.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
