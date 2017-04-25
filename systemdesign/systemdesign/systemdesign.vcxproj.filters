@@ -55,6 +55,9 @@
     <Filter Include="problems\WebLogger">
       <UniqueIdentifier>{ab0e996c-6f6c-44e2-be5c-b8b91734e382}</UniqueIdentifier>
     </Filter>
+    <Filter Include="problems\RateLimiter">
+      <UniqueIdentifier>{5af8277b-66ab-4f24-96e8-b865de4d2811}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -128,6 +131,9 @@
     </ClInclude>
     <ClInclude Include="Problems\WebLogger\weblogger_test.h">
       <Filter>problems\WebLogger</Filter>
+    </ClInclude>
+    <ClInclude Include="Problems\RateLimiter\ratelimiter.h">
+      <Filter>problems\RateLimiter</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
